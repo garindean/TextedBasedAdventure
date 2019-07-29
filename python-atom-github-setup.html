@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>How to Do Cool Stuff</title>
+        <meta name="description" content="An interactive getting started with pyth.on and github">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1>atom</h1>
+        <p>To install atom, go to <a href="https://atom.io/">atom.io</a> and hit download. Default settings should be fine.</p>
+        <p>P.S.: Your parents might have a text editor they think is cooler. Ask them about it! There's lots of different ones out there, and different ones are better for different kinds of programming.</p>
+        <h1>python</h1>
+        <ol>
+            <li>Download the <a href="https://www.python.org/downloads/">latest stable version of Python 3</a></li>
+            <li>Follow the prompts to install. If the installer asks whether you want to add Python to PATH, click "Yes"</li>
+            <li>To run a program, cd to the appropriate directory (remember, cd .. is to go up a directory) and then run "python {name of program}.py"</li>
+            <li>BONUS: You can test small bits of code with the python <i>interpreter</i>. Your parents will know about this, but basically you can set variables and interact with the just like in a real program, but in real time, similar to the Roblox command line. Great for testing out a new library or checking some math. </li>
+        </ol>
+        <h1>github</h1>
+        <ol>
+            <li>Download and install the latest stable version of <a href="https://git-scm.com/">git</a>. MAKE SURE YOU SELECT ATOM AS YOUR DEFAULT TEXT EDITOR. Or something else, just don't let it pick VIMS. A lot of developers swear by VIMS, but it's really hard to use. If you showed me a computer with VIMS on it I literally would not know how to close the program or open a new file. Lots of keyboard shortcuts to memorize. Only use it if you're ready.</li>
+            <li>Once you have git installed, search for git in the windows search bar and open the "git bash".</li>
+            <li><ol>
+                Setting Up a Project for the First Time
+                <li>Go to your project's github page and click "clone or download". Copy the URL that shows up to your clipboard.</li>
+                <li>Use cd to get to the directory you want to put the project in (I like to make a new folder for each of my projects).</li>
+                <li>Run "git init" in the directory for your project.</li>
+                <li>In the same directory, run "git pull {your project url here}"</li>
+                <li>BONUS: To open your project in Atom from the command line, run "atom ." from inside your project folder. You can also do this for an individual file by typing "atom {filename}" (as long as you're in the file's directory)</li>
+                <li>BONUS #2: If you are making a NEW project that isn't on your github yet, follow all the above steps, except that 1. You first need to make an empty repository on github 2. Instead of "git pull {your project url}", run "git remote add origin {your project url}". This tells git (the program on your computer) where on Github to look for your program.</li>
+                </ol></li>
+            <li>
+            <ol>
+                Pushing Your Changes to Github
+                <li>Go to your project directory.</li>
+                <li>Run "git add ." and "git commit -m '{describe your changes in a short sentence}'". This will add all your changes to the git registry and give them the magic stamp of approval. You can commit multiple times before uploading to github if you'd like.</li>
+                <li>Finally, run "git push origin master". You will need to log in to your github account. If it doesn't work, try running "git remote add origin {url}"</li>
+            </ol>
+            </li>
+        </ol>
+        <p>Have fun!</p>
+        
+    </body>
