@@ -5,13 +5,13 @@ class Game:
         self.inv = []
         self.currentRoom = None
 
-    def actOnKey(self):
+    def actOnKey(self, key, room1):
         self.inv.append(key)
         room1.roominv.remove(key)
         print("You pick up the key. It feels cold in your hands.")
 
 
-    def actOnLever(self):
+    def actOnLever(self, *args):
         if self.lightsOn == True:
             print("the lights turned off")
             self.lightsOn = False
@@ -21,10 +21,10 @@ class Game:
             self.lightsOn = True
 
     def printinv(self):
-        for i in game.inv:
+        for i in self.inv:
             print(i.item)
 
-    def actOnDoor(self):
+    def actOnDoor(self, *args):
         if self.dooropen == True:
             print("The door closed.")
             print("")

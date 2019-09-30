@@ -50,7 +50,7 @@ def process(otherinp):
     if "act on" in otherinp:
         otherinp = otherinp.replace("act on ","")
         if dict[otherinp] in game.currentRoom.roominv:
-            dict[otherinp].act()
+            dict[otherinp].act(key, room1)
         else:
             print("There is no "+otherinp)
 
@@ -81,6 +81,10 @@ def process(otherinp):
     elif otherinp == "inventory":
         game.printinv()
 
+
+    elif otherinp == "help":
+        print("act on to see a itme ")
+
     elif otherinp == "debugroominv":
         game.currentRoom.printroominv()
 
@@ -98,6 +102,8 @@ def process(otherinp):
 
 
 print("act on to act on a thing-")
+print()
+print()
 print("You wake up in a small room. You check your watch, only to realize that it is missing.")
 print()
 print()
