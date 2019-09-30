@@ -88,7 +88,7 @@ def process(otherinp):
         print("say inventory to see")
         print()
         #
-        print("")
+        print("say debugroominv to see the debug room inv")
         #
         #important info
         #important info above
