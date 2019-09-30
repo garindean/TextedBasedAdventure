@@ -70,7 +70,7 @@ class Item:
       self.item = item
       self.desc = desc
       self.act = acton
-      #
+      
 
 
 #ROOM 1
