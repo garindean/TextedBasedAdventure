@@ -38,4 +38,4 @@ class Game:
                 self.dooropen = True
                 self.currentRoom.CanGoDirection["forward"] = True
             else:
-                print("The door won't budge. It seems to be electronic.")
+                print("The door won't budge. It seems to be locked and electronic.")
