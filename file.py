@@ -1,2 +1,1 @@
-class File:
-  
+from pokedex import pokedex

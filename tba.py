@@ -77,6 +77,15 @@ def process(otherinp):
         room1.roominv.remove(key)
 
 
+    elif otherinp == "look around":
+        print(genlever.desc)
+        print(computer.desc)
+        print(lockdoor.desc)
+
+
+
+
+
 
     elif otherinp == "inventory":
         game.printinv()
