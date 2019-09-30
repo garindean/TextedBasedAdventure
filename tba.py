@@ -112,7 +112,7 @@ def process(otherinp):
                 elif otherinp == "backward":
                     game.currentRoom = game.currentRoom.roomBefore
                 print("You are in " + game.currentRoom.name)
-                
+
             else:
                 print("You cannot go there")
         except:
@@ -148,10 +148,10 @@ def process(otherinp):
 
 
 print("You wake up in a small room. You check your watch, only to realize that it is missing.")
-print("")
-print("")
+print()
+print()
 print("You see a few things at first glance. You see a Copper Key, Metal Door and a Lever.")
-print("")
+print()
 
 
 while rungame ==True:
