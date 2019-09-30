@@ -84,7 +84,14 @@ def process(otherinp):
 
     elif otherinp == "help":
         print("act on to see a itme ")
-
+        print()
+        print("say inventory to see")
+        print()
+        #
+        print("")
+        #
+        #important info
+        #important info above
     elif otherinp == "debugroominv":
         game.currentRoom.printroominv()
 
