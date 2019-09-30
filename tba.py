@@ -1,3 +1,6 @@
+from game import Game
+
+
 
 rungame =True
 
@@ -14,47 +17,6 @@ class Room:
         for i in self.roominv:
             print(i.item)
 
-class Game:
-    def __init__(self):
-        self.lightsOn = False
-        self.dooropen = False
-        self.inv = []
-        self.currentRoom = None
-
-    def actOnKey(self):
-        self.inv.append(key)
-        room1.roominv.remove(key)
-        print("You pick up the key. It feels cold in your hands.")
-
-
-    def actOnLever(self):
-        if self.lightsOn == True:
-            print("the lights turned off")
-            self.lightsOn = False
-
-        elif self.lightsOn == False:
-            print("the lights turned on")
-            self.lightsOn = True
-
-    def printinv(self):
-        for i in game.inv:
-            print(i.item)
-
-    def actOnDoor(self):
-        if self.dooropen == True:
-            print("The door closed.")
-            print("")
-            self.dooropen = False
-            self.currentRoom.CanGoDirection["forward"] = False
-
-        elif self.dooropen == False:
-            if self.lightsOn == True:
-                print("The door opened, with the sound of grinding metal.")
-                print("")
-                self.dooropen = True
-                self.currentRoom.CanGoDirection["forward"] = True
-            else:
-                print("The door won't budge. It seems to be electronic.")
 
 game = Game()
 room1 = Room()
@@ -70,7 +32,7 @@ class Item:
       self.item = item
       self.desc = desc
       self.act = acton
-      
+
 
 
 #ROOM 1
@@ -145,7 +107,7 @@ def process(otherinp):
             print("I don't understand.")
 
 
-
+print("act on to act on a thing-")
 print("You wake up in a small room. You check your watch, only to realize that it is missing.")
 print()
 print()
