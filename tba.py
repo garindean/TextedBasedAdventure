@@ -78,9 +78,13 @@ def process(otherinp):
 
 
     elif otherinp == "look around":
-        print(genlever.desc)
-        print(computer.desc)
-        print(lockdoor.desc)
+        if game.currentRoom == room1:
+            print(largelever.desc)
+            print(metaldoor.desc)
+        else:
+            print(genlever.desc)
+            print(computer.desc)
+            print(lockdoor.desc)
 
 
 
