@@ -71,7 +71,6 @@ class Item:
       self.desc = desc
       self.act = acton
       #
-      #
 
 
 #ROOM 1
